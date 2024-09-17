@@ -1,3 +1,3 @@
 export const Home = () => {
-  return <div>ALMA CHARLOTTA PHOTO PORTFOLIO</div>
+  return <div className="font-cormorant text-5xl">ALMA CHARLOTTA PHOTO PORTFOLIO</div>
 }
