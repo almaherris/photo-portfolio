@@ -1,6 +1,3 @@
-
-export const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
+export const NavBar = () => {
+  return <div>Navbar</div>
 }
