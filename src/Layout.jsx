@@ -3,11 +3,13 @@ import { NavBar } from "./components/Navbar"
 
 export const Layout = () => {
   return (
-    <>
+    <div className="font-dmsans">
       <NavBar />{" "}
-      <main className="app-container" id="content">
+      <main
+        className="bg-off-white flex-1 min-h-[calc(100vh-120px)] px-4 pt-24 md:p-10 md:pt-20"
+        id="content">
         <Outlet />
       </main>
-    </>
+    </div>
   )
 }

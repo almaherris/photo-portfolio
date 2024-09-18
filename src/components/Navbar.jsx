@@ -1,11 +1,9 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { RiCloseLine, RiMenuLine } from "react-icons/ri"
 import { useState, useRef, useEffect } from "react"
 
 export const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false)
-  const location = useLocation()
-  const navigate = useNavigate()
   const menuRef = useRef(null)
 
   const toggleMenu = () => {
@@ -14,16 +12,6 @@ export const NavBar = () => {
 
   const closeMenu = () => {
     setShowMenu(false)
-  }
-
-  const handleLogoClick = () => {
-    if (location.pathname === "/") {
-      //Scroll to top if on homepage
-      window.scrollTo({ top: 0, behavior: "smooth" })
-    } else {
-      //Navigate to homepage if on another page
-      navigate("/")
-    }
   }
 
   useEffect(() => {
@@ -46,25 +34,31 @@ export const NavBar = () => {
   }, [showMenu])
 
   return (
-    <div className="z-50 fixed top-0 w-full">
+    <div className="z-50 fixed top-0 w-full md:px-10 md:py-5">
       {/* Phone */}
-      <nav className="flex items-center justify-between">
-        <div className="hamburger-icon" onClick={toggleMenu}>
+      <nav className="flex items-center justify-between p-3 text-3xl md:hidden">
+        <div className="text-5xl" onClick={toggleMenu}>
           {showMenu ? <RiCloseLine /> : <RiMenuLine />}
         </div>
         <div
           ref={menuRef}
-          className={`dropdown-menu ${showMenu ? "open" : ""}`}>
+          className={`dropdown-menu absolute top-[55px] w-full z-[999] bg-off-white p-[10px] 
+            transition-all duration-400 ease 
+            ${
+              showMenu
+                ? "translate-x-0 opacity-100"
+                : "translate-x-[-100%] opacity-0"
+            }`}>
           <ul>
-            <li>
+            <li className="mt-5">
               <NavLink
                 to="/"
                 onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}>
+                className={({ isActive }) => (isActive ? "underline" : "")}>
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="mt-5">
               <NavLink
                 to="/people"
                 onClick={closeMenu}
@@ -72,7 +66,7 @@ export const NavBar = () => {
                 People
               </NavLink>
             </li>
-            <li>
+            <li className="mt-5">
               <NavLink
                 to="/nature"
                 onClick={closeMenu}
@@ -80,7 +74,7 @@ export const NavBar = () => {
                 Nature
               </NavLink>
             </li>
-            <li>
+            <li className="mt-5">
               <NavLink
                 to="/urban"
                 onClick={closeMenu}
@@ -88,7 +82,7 @@ export const NavBar = () => {
                 Urban & Architecture
               </NavLink>
             </li>
-            <li>
+            <li className="mt-5">
               <NavLink
                 to="/sport"
                 onClick={closeMenu}
@@ -98,59 +92,53 @@ export const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <img
-            className="navbar-logo"
-            src="/logos/pm-logo.png"
-            alt="Pianomäster Logo"
-            onClick={handleLogoClick}
-          />
-        </div>
       </nav>
 
       {/* Tablet and up*/}
-      <nav className="navsection-tablet">
-        <div>
-          <img
-            className="navbar-logo"
-            src="/logos/pm-logo.png"
-            alt="Pianomäster Logo"
-            onClick={handleLogoClick}
-          />
-        </div>
-        <ul className="navigation">
+      <nav className="hidden md:flex">
+        <ul className="flex gap-5">
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
               Home
             </NavLink>
           </li>{" "}
           <li>
             <NavLink
               to="/people"
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
               People
             </NavLink>
           </li>{" "}
           <li>
             <NavLink
               to="/nature"
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
               Nature
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/urban"
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
               Urban & Architecture
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/sport"
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
               Sports & Events{" "}
             </NavLink>
           </li>

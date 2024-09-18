@@ -5,6 +5,7 @@ import { Nature } from "./pages/Nature"
 import { Urban } from "./pages/Urban"
 import { Sport } from "./pages/Sport"
 import { Layout } from "./Layout"
+import './styles/global.css';
 
 export const App = () => {
   return (
