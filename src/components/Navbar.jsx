@@ -34,7 +34,8 @@ export const NavBar = () => {
   }, [showMenu])
 
   return (
-    <div className="text-3xl z-50 fixed top-0 w-full bg-off-white md:px-10 md:py-5 md:text-xl lg:text-3xl">
+    //Frosty glass here below - delete "md:backdrop-blur-xl md:bg-opacity-30"
+    <div className="text-3xl z-50 fixed top-0 w-full bg-off-white md:backdrop-blur-xl md:bg-opacity-30 md:px-10 md:py-5 md:text-xl lg:text-3xl">
       {/* Phone */}
       <nav className="flex items-center justify-between p-3 md:hidden">
         <div className="text-5xl" onClick={toggleMenu}>
@@ -42,7 +43,7 @@ export const NavBar = () => {
         </div>
         <div
           ref={menuRef}
-          className={`dropdown-menu absolute top-[55px] w-full z-[999] bg-off-white p-[10px] 
+          className={`dropdown-menu absolute top-[55px] w-full z-[999] p-[10px] 
             transition-all duration-700 ease 
             ${
               showMenu
