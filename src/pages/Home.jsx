@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <div className="flex flex-col min-h-[calc(100vh-120px)] relative">
-      <h1 className="font-cormorant text-7xl max-w-5xl md:text-8xl">
+      <h1 className="font-cormorant text-6xl max-w-5xl md:text-8xl">
         ALMA CHARLOTTA PHOTO PORTFOLIO
       </h1>
       <div className="text-xl mt-5 md:text-3xl flex flex-col flex-grow gap-5">
