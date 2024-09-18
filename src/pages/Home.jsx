@@ -15,7 +15,7 @@ export const Home = () => {
           .
         </p>
       </div>
-      <p className="text-xl md:text-3xl mt-auto">Based in Stockholm, Sweden.</p>
+      <p className="text-xl self-end pr-4 md:text-3xl mt-auto">Based in Stockholm, Sweden.</p>
     </div>
   )
 }
