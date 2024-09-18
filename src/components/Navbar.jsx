@@ -43,7 +43,7 @@ export const NavBar = () => {
         </div>
         <div
           ref={menuRef}
-          className={`dropdown-menu absolute top-[55px] w-full z-[999] p-[10px] 
+          className={`dropdown-menu bg-off-white absolute top-[55px] w-full z-50 p-2.5 pb-10 h-screen
             transition-all duration-700 ease 
             ${
               showMenu
