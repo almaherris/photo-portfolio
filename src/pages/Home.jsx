@@ -1,4 +1,10 @@
+import { useEffect } from "react"
+
 export const Home = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <div className="flex flex-col min-h-[calc(100vh-120px)] relative">
       <h1 className="font-cormorant text-6xl max-w-5xl md:text-8xl">
@@ -15,7 +21,9 @@ export const Home = () => {
           .
         </p>
       </div>
-      <p className="text-xl self-end pr-4 md:text-3xl mt-auto">Based in Stockholm, Sweden.</p>
+      <p className="text-xl self-end pr-4 md:text-3xl mt-auto">
+        Based in Stockholm, Sweden.
+      </p>
     </div>
   )
 }
