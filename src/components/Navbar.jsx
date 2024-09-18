@@ -34,9 +34,9 @@ export const NavBar = () => {
   }, [showMenu])
 
   return (
-    <div className="z-50 fixed top-0 w-full md:px-10 md:py-5">
+    <div className="text-3xl z-50 fixed top-0 w-full bg-off-white md:px-10 md:py-5 md:text-xl lg:text-3xl">
       {/* Phone */}
-      <nav className="flex items-center justify-between p-3 text-3xl md:hidden">
+      <nav className="flex items-center justify-between p-3 md:hidden">
         <div className="text-5xl" onClick={toggleMenu}>
           {showMenu ? <RiCloseLine /> : <RiMenuLine />}
         </div>
@@ -62,7 +62,7 @@ export const NavBar = () => {
               <NavLink
                 to="/people"
                 onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}>
+                className={({ isActive }) => (isActive ? "underline" : "")}>
                 People
               </NavLink>
             </li>
@@ -70,7 +70,7 @@ export const NavBar = () => {
               <NavLink
                 to="/nature"
                 onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}>
+                className={({ isActive }) => (isActive ? "underline" : "")}>
                 Nature
               </NavLink>
             </li>
@@ -78,7 +78,7 @@ export const NavBar = () => {
               <NavLink
                 to="/urban"
                 onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}>
+                className={({ isActive }) => (isActive ? "underline" : "")}>
                 Urban & Architecture
               </NavLink>
             </li>
@@ -86,7 +86,7 @@ export const NavBar = () => {
               <NavLink
                 to="/sport"
                 onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}>
+                className={({ isActive }) => (isActive ? "underline" : "")}>
                 Sports & Events{" "}
               </NavLink>
             </li>
@@ -96,7 +96,7 @@ export const NavBar = () => {
 
       {/* Tablet and up*/}
       <nav className="hidden md:flex">
-        <ul className="flex gap-5">
+        <ul className="flex gap-8">
           <li>
             <NavLink
               to="/"
