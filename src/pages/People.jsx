@@ -11,6 +11,7 @@ export const People = () => {
     { src: "/photos/people1.jpg" },
     { src: "/photos/people2.jpg" },
     { src: "/photos/people3.jpg" },
+    { src: "/photos/people4.jpg" },
   ];
   
 

@@ -11,8 +11,15 @@ export const Nature = () => {
     { src: "/photos/nature1.jpg" },
     { src: "/photos/nature2.jpg" },
     { src: "/photos/nature3.jpg" },
-  ];
-  
+    { src: "/photos/nature4.jpg" },
+    { src: "/photos/nature5.jpg" },
+    { src: "/photos/nature6.jpg" },
+    { src: "/photos/nature7.jpg" },
+    { src: "/photos/nature8.jpg" },
+    { src: "/photos/nature9.jpg" },
+    { src: "/photos/nature10.jpg" },
+    { src: "/photos/nature11.jpg" },
+  ]
 
   return (
     <div>
