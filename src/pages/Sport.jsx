@@ -15,7 +15,6 @@ export const Sport = () => {
     { src: "/photos/sport6.jpg" },
     { src: "/photos/sport7.jpg" },
     { src: "/photos/sport8.jpg" },
-    { src: "/photos/sport9.jpg" },
   ]
 
   return (
