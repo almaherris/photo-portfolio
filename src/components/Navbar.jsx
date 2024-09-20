@@ -96,8 +96,11 @@ export const NavBar = () => {
                 Sports & Events{" "}
               </NavLink>
             </li>
+            <li className="mt-5">
+              {" "}
+              <DarkModeToggle />
+            </li>
           </ul>{" "}
-          <DarkModeToggle />
         </div>
       </nav>
 

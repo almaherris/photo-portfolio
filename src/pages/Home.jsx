@@ -6,7 +6,7 @@ export const Home = () => {
   }, [])
 
   return (
-    <div className="flex flex-col min-h-[calc(100vh-120px)] relative">
+    <div className="flex flex-col min-h-[calc(100vh-160px)] relative">
       <h1 className="font-cormorant text-6xl max-w-5xl md:text-8xl">
         ALMA CHARLOTTA PHOTO PORTFOLIO
       </h1>
@@ -21,7 +21,7 @@ export const Home = () => {
           .
         </p>
       </div>
-      <p className="text-xl self-end pr-4 md:text-3xl mt-auto">
+      <p className="text-xl self-end pr-4 md:text-3xl">
         Based in Stockholm, Sweden.
       </p>
     </div>
