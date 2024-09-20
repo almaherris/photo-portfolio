@@ -1,4 +1,8 @@
 /* Global Resets */
+#root {
+  @apply bg-off-white dark:bg-off-black text-black dark:text-white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

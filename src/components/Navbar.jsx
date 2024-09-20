@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { RiCloseLine, RiMenuLine } from "react-icons/ri"
 import { useState, useRef, useEffect } from "react"
+import { DarkModeToggle } from "./DarkModeToggle"
 
 export const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -35,22 +36,26 @@ export const NavBar = () => {
 
   return (
     //Frosty glass here below - delete "md:backdrop-blur-xl md:bg-opacity-30"
-    <div className="text-3xl z-50 fixed top-0 w-full bg-off-white md:backdrop-blur-xl md:bg-opacity-30 md:px-10 md:py-5 md:text-xl lg:text-3xl">
+    <div className=" text-3xl z-50 fixed top-0 w-full bg-off-white dark:bg-off-black md:backdrop-blur-xl md:bg-opacity-30 md:px-10 md:py-5 md:text-xl lg:text-3xl">
       {/* Phone */}
       <nav className="flex items-center justify-between p-3 md:hidden">
         <div className="text-5xl" onClick={toggleMenu}>
-          {showMenu ? <RiCloseLine /> : <RiMenuLine />}
+          {showMenu ? (
+            <RiCloseLine className="dark:text-off-white" />
+          ) : (
+            <RiMenuLine className="dark:text-off-white" />
+          )}
         </div>
         <div
           ref={menuRef}
-          className={`dropdown-menu bg-off-white absolute top-[55px] w-full z-50 p-2.5 pb-10 h-screen
+          className={`dropdown-menu left-0 bg-off-white dark:bg-off-black dark:text-off-white absolute top-[55px] w-full z-50 p-2.5 pb-10 h-screen
             transition-all duration-700 ease 
             ${
               showMenu
                 ? "translate-x-0 opacity-100"
                 : "translate-x-[-100%] opacity-0"
             }`}>
-          <ul>
+          <ul className="ml-3">
             <li className="mt-5">
               <NavLink
                 to="/"
@@ -91,12 +96,13 @@ export const NavBar = () => {
                 Sports & Events{" "}
               </NavLink>
             </li>
-          </ul>
+          </ul>{" "}
+          <DarkModeToggle />
         </div>
       </nav>
 
       {/* Tablet and up*/}
-      <nav className="hidden md:flex">
+      <nav className="hidden dark:text-off-white md:flex justify-between items-center">
         <ul className="flex gap-8">
           <li>
             <NavLink
@@ -144,6 +150,7 @@ export const NavBar = () => {
             </NavLink>
           </li>
         </ul>
+        <DarkModeToggle className="relative top-0 left-0" />
       </nav>
     </div>
   )
