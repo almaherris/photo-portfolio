@@ -22,6 +22,7 @@ export const Nature = () => {
       { src: "/photos/nature9.jpg" },
       { src: "/photos/nature10.jpg" },
       { src: "/photos/nature11.jpg" },
+      { src: "/photos/nature12.jpg" },
     ]
 
     setShuffledImages(shuffleArray([...natureImg]))
