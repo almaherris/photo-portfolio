@@ -1,3 +1,0 @@
-- photos austria 
-- Lägga till roligare hamburger
-- bestämma mig om frostat glas

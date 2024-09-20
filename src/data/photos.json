@@ -1,0 +1,38 @@
+{
+  "nature": [
+    { "src": "/photos/nature1.jpg" },
+    { "src": "/photos/nature2.jpg" },
+    { "src": "/photos/nature3.jpg" },
+    { "src": "/photos/nature4.jpg" },
+    { "src": "/photos/nature5.jpg" },
+    { "src": "/photos/nature6.jpg" },
+    { "src": "/photos/nature7.jpg" },
+    { "src": "/photos/nature8.jpg" },
+    { "src": "/photos/nature9.jpg" },
+    { "src": "/photos/nature10.jpg" },
+    { "src": "/photos/nature11.jpg" },
+    { "src": "/photos/nature12.jpg" }
+  ],
+  "sport": [
+    { "src": "/photos/sport1.jpg" },
+    { "src": "/photos/sport2.jpg" },
+    { "src": "/photos/sport3.jpg" },
+    { "src": "/photos/sport4.jpg" },
+    { "src": "/photos/sport5.jpg" },
+    { "src": "/photos/sport6.jpg" },
+    { "src": "/photos/sport7.jpg" }
+  ],
+  "urban": [
+    { "src": "/photos/urban1.jpg" },
+    { "src": "/photos/urban2.jpg" },
+    { "src": "/photos/urban3.jpg" },
+    { "src": "/photos/urban4.jpg" },
+    { "src": "/photos/urban5.jpg" }
+  ],
+  "people": [
+    { "src": "/photos/people1.jpg" },
+    { "src": "/photos/people2.jpg" },
+    { "src": "/photos/people3.jpg" },
+    { "src": "/photos/people4.jpg" }
+  ]
+}
