@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useEffect } from "react"
 
 export const Home = () => {
@@ -12,6 +13,13 @@ export const Home = () => {
       </h1>
       <div className="text-xl mt-5 md:text-3xl flex flex-col flex-grow gap-5">
         <p>Welcome to my portfolio. I like taking photos.</p>
+        <p>
+          Start exploring my photos{" "}
+          <Link to="/nature">
+            <u>here</u>
+          </Link>
+          .
+        </p>
         <p>
           Need photos taken? Email me
           <a href="mailto:almaherrstrom@hotmail.com">

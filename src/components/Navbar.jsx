@@ -66,18 +66,18 @@ export const NavBar = () => {
             </li>
             <li className="mt-5">
               <NavLink
-                to="/people"
-                onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "underline" : "")}>
-                People
-              </NavLink>
-            </li>
-            <li className="mt-5">
-              <NavLink
                 to="/nature"
                 onClick={closeMenu}
                 className={({ isActive }) => (isActive ? "underline" : "")}>
                 Nature
+              </NavLink>
+            </li>
+            <li className="mt-5">
+              <NavLink
+                to="/people"
+                onClick={closeMenu}
+                className={({ isActive }) => (isActive ? "underline" : "")}>
+                People
               </NavLink>
             </li>
             <li className="mt-5">
@@ -118,15 +118,6 @@ export const NavBar = () => {
           </li>{" "}
           <li>
             <NavLink
-              to="/people"
-              className={({ isActive }) =>
-                isActive ? "underline underline-offset-4" : ""
-              }>
-              People
-            </NavLink>
-          </li>{" "}
-          <li>
-            <NavLink
               to="/nature"
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-4" : ""
@@ -134,6 +125,15 @@ export const NavBar = () => {
               Nature
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/people"
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
+              People
+            </NavLink>
+          </li>{" "}
           <li>
             <NavLink
               to="/urban"
