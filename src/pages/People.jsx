@@ -23,7 +23,7 @@ export const People = () => {
     <div>
       <PageTemplate
         title="People"
-        description="Portraits, street photography, or candid moments featuring individuals or groups."
+        description="Portraits, street photography, and candid moments featuring individuals or groups."
         section={<Gallery images={shuffledImages} />}
       />
     </div>

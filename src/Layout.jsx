@@ -6,7 +6,7 @@ export const Layout = () => {
     <div className="font-dmsans">
       <NavBar />{" "}
       <main
-        className="bg-off-white flex-1 min-h-[calc(100vh-120px)] px-4 pt-24 md:p-10 md:pt-28"
+        className="bg-off-white flex-1 min-h-[calc(100vh-120px)] mx-4 mt-24 md:m-10 md:mt-28"
         id="content">
         <Outlet />
       </main>
