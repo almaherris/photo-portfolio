@@ -13,7 +13,7 @@ export const Home = () => {
       </h1>
       <div className="text-xl mt-5 md:text-3xl flex flex-col flex-grow gap-5">
         <p>
-          Welcome to my portfolio. Start exploring my work{" "}
+          Welcome to my portfolio. Start exploring my photos{" "}
           <Link to="/nature">
             <u>here</u>
           </Link>
