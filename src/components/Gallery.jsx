@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-import { useState } from "react";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import PropTypes from "prop-types"
+import { useState } from "react"
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
 
 export const Gallery = ({ images }) => {
-  const [open, setOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [open, setOpen] = useState(false)
+  const [photoIndex, setPhotoIndex] = useState(0)
 
   return (
     <>
@@ -14,15 +14,14 @@ export const Gallery = ({ images }) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative overflow-hidden"
-          >
+            className="relative overflow-hidden transform hover:scale-105 transition-transform duration-700 cursor-pointer">
             <img
               src={image.src}
               alt={`Gallery Image ${index + 1}`}
               className="object-cover w-full h-full"
               onClick={() => {
-                setPhotoIndex(index);
-                setOpen(true);
+                setPhotoIndex(index)
+                setOpen(true)
               }}
             />
           </div>
@@ -40,13 +39,13 @@ export const Gallery = ({ images }) => {
         />
       )}
     </>
-  );
-};
+  )
+}
 
 Gallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
-      src: PropTypes.string.isRequired
+      src: PropTypes.string.isRequired,
     })
-  ).isRequired
-};
+  ).isRequired,
+}
