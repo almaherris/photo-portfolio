@@ -29,14 +29,14 @@
     { "src": "/photos/urban3.jpg" },
     { "src": "/photos/urban4.jpg" },
     { "src": "/photos/urban5.jpg" },
-    { "src": "/photos/urban6.jpg" },
-    { "src": "/photos/urban7.jpg" }
+    { "src": "/photos/urban6.jpg" }
   ],
   "people": [
     { "src": "/photos/people1.jpg" },
     { "src": "/photos/people2.jpg" },
     { "src": "/photos/people3.jpg" },
     { "src": "/photos/people4.jpg" },
-    { "src": "/photos/people5.jpg" }
+    { "src": "/photos/people5.jpg" },
+    { "src": "/photos/people6.jpg" }
   ]
 }
