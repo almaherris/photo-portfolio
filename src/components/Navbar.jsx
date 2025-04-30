@@ -97,6 +97,14 @@ export const NavBar = () => {
               </NavLink>
             </li>
             <li className="mt-5">
+              <NavLink
+                to="/media"
+                onClick={closeMenu}
+                className={({ isActive }) => (isActive ? "underline" : "")}>
+                Media{" "}
+              </NavLink>
+            </li>
+            <li className="mt-5">
               {" "}
               <DarkModeToggle />
             </li>
@@ -140,7 +148,7 @@ export const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-4" : ""
               }>
-              Urban & Architecture
+              Urban
             </NavLink>
           </li>
           <li>
@@ -150,6 +158,15 @@ export const NavBar = () => {
                 isActive ? "underline underline-offset-4" : ""
               }>
               Sports & Events{" "}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/media"
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }>
+              Media{" "}
             </NavLink>
           </li>
         </ul>
