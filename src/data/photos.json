@@ -13,7 +13,12 @@
     { "src": "/photos/nature11.jpg" },
     { "src": "/photos/nature12.jpg" },
     { "src": "/photos/nature13.jpg" },
-    { "src": "/photos/nature14.jpg" }
+    { "src": "/photos/nature14.jpg" },
+    { "src": "/photos/nature15.jpg" },
+    { "src": "/photos/nature16.jpg" },
+    { "src": "/photos/nature17.jpg" },
+    { "src": "/photos/nature18.jpg" }
+
   ],
   "sport": [
     { "src": "/photos/sport1.jpg" },
@@ -21,7 +26,8 @@
     { "src": "/photos/sport3.jpg" },
     { "src": "/photos/sport4.jpg" },
     { "src": "/photos/sport5.jpg" },
-    { "src": "/photos/sport6.jpg" }
+    { "src": "/photos/sport6.jpg" },
+    { "src": "/photos/sport7.jpg" }
   ],
   "urban": [
     { "src": "/photos/urban1.jpg" },
